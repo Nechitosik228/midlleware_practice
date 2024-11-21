@@ -30,7 +30,7 @@ async def wrong_test(custom_header: Annotated[str | None, Header()], data: Wrong
     return {"custom_header": custom_header, "data": data}
 
 
-@router.post("/custom")
+@router.post("/hello")
 async def hello():
     return "hello"
 
